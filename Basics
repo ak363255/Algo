@@ -1,0 +1,47 @@
+ 1. DATA STRUCTURES
+     Organise data so that it can be accessed quickly and usefully
+ 
+ Ex:-List,Stacks, Queues,Heap,Search tree,HashTable,bloom filters,union find etc.
+   WHY so many ?
+   Ans :- Different data structure support different set of operation->Suitable for different type of task
+   
+   Rule of thumb :- Choose the "minimal" datstructure that support all the operation
+   
+   Four level of data structures
+   
+   level 0- What is data Structure.
+   level 1- Cocktail party(knows some data structure but not using)
+   level 2- using data structures
+   level 3- Competetive Hard coder from scratch
+   
+   Talking about level 2 data structure.
+   
+   Heap Data Structure
+   Heap :supported operation
+   - Employe records and network edges and events etc
+   1. INSERT:-Add a new object to the heap
+   2. Extract -min- Remove an object with minimum key value
+   
+   Also know about Running time 
+   1.Insert O(log n)
+    2.Heapipy O(n)
+    3. Delete O(log n)
+    
+    Application: Sorting
+    Canonical use of heap:-Fast way to do repeated minima computation
+    
+    Heap Sort:
+    Insert All elements in heap and extract minimum one by one
+    Running time-O(n log n)
+    -->optimal for comparison based soting algo
+    
+    2-->Event Manager
+    Event Record -update record(who scored top),update Schedule for an event
+    
+    3--->Median Maintainence
+    
+    
+    
+    
+    
+    
