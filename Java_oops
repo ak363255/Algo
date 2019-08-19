@@ -1,1 +1,157 @@
+Object Oriented Java
+. Polymorphism
+  .Compile time polymorphism:-Method Overloading
+  .Run time Polymorphism: Method Overriding
+Overloading: It is an example of Compile time Polymorphism , Which method to call is decided by compiler.
+Overriding :-It is an example of run time polymorphism, method call is decided by JVM in run time
 
+What is rum time polymorphism ?
+
+
+package hkkjkj;
+import java.util.*;
+public class amit {
+	public static void main(String args[])
+	{
+		animal a=new animal();
+		a.eat(); //Animal eating
+		animal b=new dog();  ///upcastig
+		b.eat(); ////Dog eating
+	
+	}
+	static class animal
+	{
+		public void eat()
+		{
+			System.out.println("Animal Eating");
+		}
+	}
+	static class dog extends animal
+	{
+		public void eat()
+		{
+			System.out.println("Dog eating");
+		}
+	}
+}
+OOPs Concept-----
+1.Data Hiding
+2.Abstraction
+3.Encapsulation
+4.Tightly Encapsulated class
+5.Is- A relationship
+6. Has A- relationship
+7. Method Signature
+8.Overloading
+9.Overriding
+10.Method Hiding
+11.Static control flow
+12.Instance control flow
+13.Constructors
+14. Coupling
+15.Cohesion
+16. Type Casting
+
+
+What is data Hiding ?
+
+Hiding the data so that outside person cannot acces our data directly
+By using private modifier we can implement data hashing
+class Account
+{
+ private double balance;
+}
+
+The main advantage of data hiding is to achieve security
+
+What is Abstraction ?
+Hiding Internal implementation and just highlight the set of services you are offering
+By using interface and abstract class we can acheive abstraction
+
+what is tightly encapsulated class ?
+A class is said to be tightly encapsulated if every data member is declared as private
+eg:-
+class A
+{
+  private int bal;
+  public int getbal
+  {
+   return bal;
+  }
+}
+
+what is encapsulation?
+Encapsulating data and corresponding mathod into a single module known as encapsulation
+Encapsulation=datahiding+Abstraction
+
+class Account
+{
+ private double ba;
+ public double getbal()
+ {
+ return bal;
+ }
+ public void set balance(double bal)
+ {
+ this.bal=bal;
+ }
+}
+Hiding data behind method is the central concept of encapsulation
+
+
+What is IS-A realtionship ?
+It is also known as inheritance
+By using extend keyword we can implement is a relationship
+Conclusion:-
+What ever the parent has by default avaliable to child class but what ever available to child class is not avaliable to parent class
+Parent class reference can be used to hold child reference but we can call only parent class methods
+Cyclic inheritance is not allowed
+
+class a extends b{
+
+}
+class b extends a
+{
+
+}
+
+what is Has A relationship ?
+
+
+
+
+
+
+OverLoading ?
+In method overloading method resolution is always takes care by compiler based on reference type. hence overloading i also considered as 
+compile time polymorphism
+Case 1:- Automatic promotion in Overloading
+ If in overloading method resoluton if the matched method with specialized argument is not found then compiler wont raise error 
+ immediately first it promotes the argument to next level and checked for matched method
+ 
+ the following are possible promotion in overloading
+  Byte-->short-->int-->long-->float--->double
+ char-->
+ 
+ Method signature ?
+ Method signature consisting of method name nad argument list
+ public void m1(int i,float j)  ///m1(int i ,float j) method signature
+ {}
+ in java return type is not the part of method signature
+ 
+ 
+ Overriding ?
+ Overriding is also known as runtime polymorphism
+ In overriding method name and argument must be matched
+ in overriding return type must be same
+ private methods are not visible to child classes hence overriding concept is not appicable to private methods
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
